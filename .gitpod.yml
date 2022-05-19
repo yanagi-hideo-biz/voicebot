@@ -1,7 +1,7 @@
 # Command to start on workspace startup (optional)
 tasks:
 #  - init: "npm install -g npm"
-  - command: "cd && npm install -g --unsafe-perm node-red node-red-node-watson node-red-contrib-play-audio node-red-contrib-browser-utils && mkdir .node-red && ln -s /workspace/w_translator/flow.json ./.node-red/ && node-red flow.json"
+  - command: "cd && npm install -g --unsafe-perm node-red node-red-node-watson node-red-contrib-play-audio node-red-contrib-browser-utils && mkdir .node-red && ln -s /workspace/w_translator/flows.json ./.node-red/ && node-red flows.json"
     name: Node-RED
 # Ports to expose on workspace startup (optional)
 ports:
