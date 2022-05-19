@@ -1,2 +1,2 @@
-# voicebot
-voicebot on Node-RED
+# IBM Watson Auto Translator
+IBM Watson on Node-RED
