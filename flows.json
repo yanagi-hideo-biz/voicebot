@@ -1,0 +1,124 @@
+[
+    {
+        "id": "6303cb044297e248",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "79132b16f49f3e45",
+        "type": "microphone",
+        "z": "6303cb044297e248",
+        "name": "",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "f4b9a4d24ced93ba"
+            ]
+        ]
+    },
+    {
+        "id": "f4b9a4d24ced93ba",
+        "type": "watson-speech-to-text",
+        "z": "6303cb044297e248",
+        "name": "",
+        "alternatives": 1,
+        "speakerlabels": false,
+        "smartformatting": true,
+        "lang": "ja-JP",
+        "langhidden": "ja-JP",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "custom-weight": "0.5",
+        "band": "BroadbandModel",
+        "bandhidden": "BroadbandModel",
+        "keywords": "",
+        "keywords-threshold": "0.5",
+        "word-confidence": false,
+        "password": "",
+        "apikey": "",
+        "payload-response": true,
+        "streaming-mode": false,
+        "streaming-mute": true,
+        "auto-connect": false,
+        "discard-listening": false,
+        "disable-precheck": false,
+        "service-endpoint": "",
+        "credentials": {},
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "d30e78043f0ba369"
+            ]
+        ]
+    },
+    {
+        "id": "f464ac0b30c4c7a8",
+        "type": "watson-text-to-speech",
+        "z": "6303cb044297e248",
+        "name": "",
+        "lang": "en-US",
+        "langhidden": "en-US",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "voice": "en-US_LisaV3Voice",
+        "voicehidden": "en-US_LisaV3Voice",
+        "format": "audio/mp3",
+        "password": "",
+        "apikey": "",
+        "payload-response": true,
+        "service-endpoint": "",
+        "credentials": {},
+        "x": 460,
+        "y": 340,
+        "wires": [
+            [
+                "4fc7dfba2097840d"
+            ]
+        ]
+    },
+    {
+        "id": "4fc7dfba2097840d",
+        "type": "play audio",
+        "z": "6303cb044297e248",
+        "name": "",
+        "voice": "0",
+        "x": 790,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d30e78043f0ba369",
+        "type": "watson-translator",
+        "z": "6303cb044297e248",
+        "name": "",
+        "action": "translate",
+        "basemodel": "ar-en",
+        "domain": "general",
+        "srclang": "ja",
+        "destlang": "en",
+        "apikey": "",
+        "custom": "",
+        "domainhidden": "general",
+        "srclanghidden": "ja",
+        "destlanghidden": "en",
+        "basemodelhidden": "ar-en",
+        "customhidden": "",
+        "filetype": "forcedglossary",
+        "trainid": "",
+        "lgparams2": true,
+        "service-endpoint": "",
+        "credentials": {},
+        "x": 470,
+        "y": 240,
+        "wires": [
+            [
+                "f464ac0b30c4c7a8"
+            ]
+        ]
+    }
+]
