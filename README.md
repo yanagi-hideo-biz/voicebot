@@ -1,2 +1,2 @@
-# IBM Watson Auto Language Translator
+# IBM Watson Language Translator
 IBM Watson on Node-RED
